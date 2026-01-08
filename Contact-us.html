@@ -131,7 +131,7 @@
                 </div>
             </div>
             <!-- /Break Page Vertical -->
- 
+
             <!-- About Section -->
             <div class="section-modern flat-spacing-12">
                 <div class="container-6">
@@ -141,19 +141,19 @@
                                 <i class="icon icon-pixels-right"></i>
                             </div>
                             <span class="text-uppercase text-primary fw-semibold lh-20">
-                               Get in Touch with WebTrion
+                                Get in Touch with WebTrion
                             </span>
                             <div class="ic-wrap right">
                                 <i class="icon icon-pixels-left"></i>
                             </div>
                         </div>
                         <p class="title text-56 text-black fw-medium letter-space--3 wow fadeInUp">
-                          Talk to Web Experts at <span class="text-primary"> WebTrion </span>
+                            Talk to Web Experts at <span class="text-primary"> WebTrion </span>
                         </p>
                         <p class="desc fw-medium text-body-2 cl-text-3 wow fadeInUp">
-                          Let’s build something powerful. WebTrion creates high-performance
+                            Let’s build something powerful. WebTrion creates high-performance
                             <br class="d-none d-md-block">
-                           websites that drive growth. Contact us to get started.
+                            websites that drive growth. Contact us to get started.
                         </p>
                     </div>
 
@@ -163,7 +163,8 @@
                             <div class="wg-modern style-large wow fadeInUpZoom">
                                 <div class="modern-image">
                                     <img loading="lazy" width="5000" height="5000"
-                                        src="assets/images/landing/section/workplace-with-computer-table-freelance-remote-work-concept-generative-ai.webp" alt="Custom Web Solutions">
+                                        src="assets/images/landing/section/workplace-with-computer-table-freelance-remote-work-concept-generative-ai.webp"
+                                        alt="Custom Web Solutions">
                                 </div>
                                 <div class="modern-content contact-form-wrapper">
                                     <h6 class="name text-28-32 text-black mb-3">
@@ -173,138 +174,100 @@
                                         Fill out the form below and our team will get back to you within 24 hours.
                                     </p>
 
-                                    <form class="contact-form" id="contactForm" action="#" method="POST">
+                                    <form class="contact-form" id="contactForm"
+                                        action="https://api.web3forms.com/submit" method="POST">
+
+                                        <!-- REQUIRED: Web3Forms Access Key -->
+                                        <input type="hidden" name="access_key"
+                                            value="e4779985-3606-40a0-a833-154b2c29a2fb">
+
+                                        <!-- Optional Settings -->
+                                        <input type="hidden" name="subject" value="New Project Enquiry">
+                                        <input type="hidden" name="from_name" value="Website Contact Form">
+                                        <!-- <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you"> -->
+
+                                        <!-- Honeypot Spam Protection -->
+                                        <input type="checkbox" name="botcheck" style="display:none">
+
                                         <div class="form-row">
                                             <div class="form-group">
-                                                <label for="fullName" class="form-label">Full Name <span class="required">*</span></label>
-                                                <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Enter your full name" required>
+                                                <label class="form-label">Full Name <span
+                                                        class="required">*</span></label>
+                                                <input type="text" name="fullName" class="form-control"
+                                                    placeholder="Enter your full name" required>
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group">
-                                                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
-                                                <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required>
+                                                <label class="form-label">Email Address <span
+                                                        class="required">*</span></label>
+                                                <input type="email" name="email" class="form-control"
+                                                    placeholder="your@email.com" required>
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group">
-                                                <label for="phone" class="form-label">Phone Number <span class="required">*</span></label>
-                                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+                                                <label class="form-label">Phone Number <span
+                                                        class="required">*</span></label>
+                                                <input type="tel" name="phone" class="form-control"
+                                                    placeholder="+1 (555) 000-0000" required>
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group">
-                                                <label for="company" class="form-label">Company Name <span class="optional">(Optional)</span></label>
-                                                <input type="text" id="company" name="company" class="form-control" placeholder="Your company name">
+                                                <label class="form-label">Company Name <span
+                                                        class="optional">(Optional)</span></label>
+                                                <input type="text" name="company" class="form-control"
+                                                    placeholder="Your company name">
                                             </div>
                                         </div>
 
+                                        <!-- Custom Select (IMPORTANT: name attribute added) -->
                                         <div class="form-row">
                                             <div class="form-group">
-                                                <label for="projectType" class="form-label">Project Type <span class="required">*</span></label>
+                                                <label class="form-label">Project Type <span
+                                                        class="required">*</span></label>
+
                                                 <div class="custom-select-wrapper">
-                                                    <input type="hidden" id="projectType" name="projectType" required>
+                                                    <input type="hidden" id="projectType" name="project_type" required>
+
                                                     <div class="custom-select-trigger">
                                                         <span class="selected-value">Select project type</span>
-                                                        <svg class="select-arrow" width="16" height="16" viewBox="0 0 16 16">
-                                                            <path fill="currentColor" d="M8 11L3 6h10z"/>
+                                                        <svg class="select-arrow" width="16" height="16"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill="currentColor" d="M8 11L3 6h10z" />
                                                         </svg>
                                                     </div>
+
                                                     <div class="custom-select-options">
-                                                        <div class="custom-option" data-value="website">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <rect x="2" y="3" width="20" height="14" rx="2"/>
-                                                                <path d="M8 21h8"/>
-                                                                <path d="M12 17v4"/>
-                                                            </svg>
-                                                            <span>Website</span>
+                                                        <div class="custom-option" data-value="Website">Website</div>
+                                                        <div class="custom-option" data-value="E-commerce">E-commerce
                                                         </div>
-                                                        <div class="custom-option" data-value="ecommerce">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <circle cx="9" cy="21" r="1"/>
-                                                                <circle cx="20" cy="21" r="1"/>
-                                                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-                                                            </svg>
-                                                            <span>E-commerce</span>
+                                                        <div class="custom-option" data-value="Landing Page">Landing
+                                                            Page</div>
+                                                        <div class="custom-option" data-value="Web Application">Web
+                                                            Application</div>
+                                                        <div class="custom-option" data-value="Mobile App">Mobile App
                                                         </div>
-                                                        <div class="custom-option" data-value="landing-page">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M4 4h16v16H4z"/>
-                                                                <path d="M9 9h6M9 13h6M9 17h3"/>
-                                                            </svg>
-                                                            <span>Landing Page</span>
+                                                        <div class="custom-option" data-value="Portfolio Website">
+                                                            Portfolio Website</div>
+                                                        <div class="custom-option" data-value="Blog / CMS">Blog / CMS
                                                         </div>
-                                                        <div class="custom-option" data-value="web-app">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <rect x="2" y="2" width="20" height="20" rx="2"/>
-                                                                <path d="M7 7h10M7 12h10M7 17h6"/>
-                                                            </svg>
-                                                            <span>Web Application</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="mobile-app">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <rect x="5" y="2" width="14" height="20" rx="2"/>
-                                                                <path d="M12 18h.01"/>
-                                                            </svg>
-                                                            <span>Mobile App</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="portfolio">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <rect x="3" y="3" width="7" height="7"/>
-                                                                <rect x="14" y="3" width="7" height="7"/>
-                                                                <rect x="14" y="14" width="7" height="7"/>
-                                                                <rect x="3" y="14" width="7" height="7"/>
-                                                            </svg>
-                                                            <span>Portfolio Website</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="blog-cms">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
-                                                            </svg>
-                                                            <span>Blog / CMS</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="corporate">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                                                                <path d="M9 22V12h6v10"/>
-                                                            </svg>
-                                                            <span>Corporate Website</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="redesign">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
-                                                            </svg>
-                                                            <span>Website Redesign</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="seo">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M11 3L3 11l8 8 8-8-8-8z"/>
-                                                                <path d="M11 21v-8M3 11h16"/>
-                                                            </svg>
-                                                            <span>SEO Services</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="maintenance">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                                                            </svg>
-                                                            <span>Maintenance & Support</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="ui-ux">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                                                            </svg>
-                                                            <span>UI/UX Design</span>
-                                                        </div>
-                                                        <div class="custom-option" data-value="custom">
-                                                            <svg class="option-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                                                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-                                                            </svg>
-                                                            <span>Custom Solution</span>
-                                                        </div>
+                                                        <div class="custom-option" data-value="Corporate Website">
+                                                            Corporate Website</div>
+                                                        <div class="custom-option" data-value="Website Redesign">Website
+                                                            Redesign</div>
+                                                        <div class="custom-option" data-value="SEO Services">SEO
+                                                            Services</div>
+                                                        <div class="custom-option" data-value="Maintenance & Support">
+                                                            Maintenance & Support</div>
+                                                        <div class="custom-option" data-value="UI/UX Design">UI/UX
+                                                            Design</div>
+                                                        <div class="custom-option" data-value="Custom Solution">Custom
+                                                            Solution</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -312,19 +275,21 @@
 
                                         <div class="form-row">
                                             <div class="form-group">
-                                                <label for="message" class="form-label">Message / Project Details <span class="required">*</span></label>
-                                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea>
+                                                <label class="form-label">Message / Project Details <span
+                                                        class="required">*</span></label>
+                                                <textarea name="message" class="form-control" rows="5"
+                                                    placeholder="Tell us about your project..." required></textarea>
                                             </div>
                                         </div>
 
                                         <button type="submit" class="action tf-btn-2">
-                                        <div class="wrap-text text-body-2 fw-medium text-white" bis_skin_checked="1">
-                                            <span class="text text-linear">
-                                                    Get Free Consultation
-                                            </span>
-                                        </div>
-                                    </button>
+                                            <div class="wrap-text text-body-2 fw-medium text-white">
+                                                <span class="text text-linear">Get Free Consultation</span>
+                                            </div>
+                                        </button>
+
                                     </form>
+
 
                                 </div>
                             </div>
@@ -332,10 +297,10 @@
                     </div>
                 </div>
             </div>
-        </div>    
-            <!-- /About Section -->
         </div>
-       
+        <!-- /About Section -->
+        </div>
+
 
         <!-- Footer -->
         <footer class="tf-landing-footer">
@@ -346,8 +311,8 @@
                             alt="Image">
                     </div>
                     <h2 class="title text-80-84 text-white letter-space--3 wow fadeZoom">
-                    Let’s Build a High‑Impact <br>
-                    Digital Presence
+                        Let’s Build a High‑Impact <br>
+                        Digital Presence
                     </h2>
                     <p class="desc text-white text-body-2 wow fadeInUp">
                         One‑time project pricing with scalable, future‑ready web solutions
@@ -374,7 +339,8 @@
     <div class="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
         <div class="canvas-header">
             <a href="#" class="logo-site">
-                <img loading="lazy" width="102" height="32" src="assets/images/landing/logo/webtrionBlack.svg" alt="LOGO">
+                <img loading="lazy" width="102" height="32" src="assets/images/landing/logo/webtrionBlack.svg"
+                    alt="LOGO">
             </a>
             <span class="icon-close-popup" data-bs-dismiss="offcanvas">
                 <i class="icon-close"></i>
@@ -431,48 +397,48 @@
 
     <!-- Custom Select JavaScript -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const customSelect = document.querySelector('.custom-select-wrapper');
             if (!customSelect) return;
-            
+
             const trigger = customSelect.querySelector('.custom-select-trigger');
             const options = customSelect.querySelector('.custom-select-options');
             const hiddenInput = customSelect.querySelector('input[type="hidden"]');
             const selectedValue = customSelect.querySelector('.selected-value');
             const customOptions = customSelect.querySelectorAll('.custom-option');
-            
+
             // Toggle dropdown
-            trigger.addEventListener('click', function(e) {
+            trigger.addEventListener('click', function (e) {
                 e.stopPropagation();
                 customSelect.classList.toggle('open');
             });
-            
+
             // Select option
             customOptions.forEach(option => {
-                option.addEventListener('click', function() {
+                option.addEventListener('click', function () {
                     const value = this.getAttribute('data-value');
                     const text = this.querySelector('span').textContent;
-                    
+
                     // Update UI
                     selectedValue.textContent = text;
                     selectedValue.style.color = 'var(--black)';
-                    
+
                     // Update hidden input
                     hiddenInput.value = value;
-                    
+
                     // Remove active class from all options
                     customOptions.forEach(opt => opt.classList.remove('active'));
-                    
+
                     // Add active class to selected option
                     this.classList.add('active');
-                    
+
                     // Close dropdown
                     customSelect.classList.remove('open');
                 });
             });
-            
+
             // Close dropdown when clicking outside
-            document.addEventListener('click', function(e) {
+            document.addEventListener('click', function (e) {
                 if (!customSelect.contains(e.target)) {
                     customSelect.classList.remove('open');
                 }
