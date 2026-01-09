@@ -25981,10 +25981,25 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: grid;
   place-items: start;
 }
+.FtrLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto 40px;
+}
+.FtrLogo img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
 @media (min-width: 1200px) {
   .wg-ticket .action .wrap-text {
     padding: 16px 20px;
   }
+  .FtrLogo{
+    max-width: 500px;
+}
 }
 @media (max-width: 991px) {
   .wg-ticket {
@@ -25992,6 +26007,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     gap: 16px;
     padding: 20px 15px;
   }
+    .FtrLogo{
+    max-width: 300px;
+}
   .wg-ticket .desc {
     margin-bottom: 20px;
   }
@@ -26000,6 +26018,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .wg-ticket {
     place-items: center;
   }
+    .FtrLogo{
+    max-width: 200px;
+}
   .wg-ticket .content {
     place-items: center;
   }
@@ -32141,9 +32162,8 @@ div#about {
   width: 100%;
 }
 
-.contact-form .form-row:nth-child(5),
-.contact-form .form-row:nth-child(6),
-.contact-form .form-row:nth-child(7) {
+
+.contact-form .form-row100 {
   flex: 0 0 100%;
   width: 100%;
 }
